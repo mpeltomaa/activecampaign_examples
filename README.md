@@ -3,6 +3,8 @@
 ## Add contact to list
 File: AddContactToList.php
 
+This code will add new contact to your list. If contact is already in your Active Campaign code will also attempt to change firstname and lastname.
+
 ### Requirements
 - Your Active Campaign URL
 - Your Active Campaign API key
@@ -32,5 +34,23 @@ Curl extension for PHP is needed to get things rolling. If you don't have it alr
 
 
 ### How to use code
-- Fill in your URL and API Key to code
-- In $post array you find p[xx], status[xx] and instantresponders[xx]. Replace XX with your list ID
+- Fill in your own URL, listID and API Key at the start of the code.
+
+#### Wordpress
+If you are using Wordpress you can easily drop in this code to existing page. Example structure:
+
+```
+<?php get_header(); ?>
+  <!-- Start of your normal page content -->
+  <div>
+    Here goes your normal page content.
+  </div>
+
+  <!-- Copy paste contents of AddContactToList.php here -->
+
+  <!-- Add sidebar if you use one... ->
+  <?php get_sidebar(); ?>
+
+  <!-- Add footer -->
+  <?php get_footer(); ?>
+```
