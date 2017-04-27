@@ -10,7 +10,7 @@
 */
 
 $url = 'https://your.ac.api.url';
-$listID = 74;
+$listID = 0;
 $debug = false;
 
 $params = array(
