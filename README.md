@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/mpeltomaa/activecampaign_examples/badges/gpa.svg)](https://codeclimate.com/github/mpeltomaa/activecampaign_examples)
+
 # How to use Active Campaign with Campwire Thank you -page
 
 ## Add contact to list
