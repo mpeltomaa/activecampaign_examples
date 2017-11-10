@@ -2,6 +2,22 @@
 
 # How to use Active Campaign with Campwire Thank you -page
 
+## Variables from Campwire
+When your customer is redirected to your Thank you -page following parameters are added to URL:
+
+```
+cw_order_id        = Order ID from Campwire
+cw_order_email     = Customers email address
+cw_order_firstname = Customers firstname
+cw_order_lastname  = Customers lastname
+cw_order_price     = Purchase price without taxes
+cw_order_currency  = Currency used in purchase, defaults to EUR
+cw_order_pid       = Purchased product ID on Campwire
+```
+
+Example:
+`http://your-site.com/thanks?cw_order_id=5084ecd1-2d6e-4f1e-8f66-1086682b6234&cw_order_email=customer%40email.com&cw_order_firstname=Erkki&cw_order_lastname=Merkki&cw_order_price=100.0&cw_order_currency=EUR&cw_order_pid=1001`
+
 ## Add contact to list
 File: AddContactToList.php
 
