@@ -21,6 +21,8 @@ Example:
 ## Add contact to list
 File: AddContactToList.php
 
+*Note*: AddContactToList.php is currently using only fields: email, firstname and lastname.
+
 This code will add new contact to your list. If contact is already in your Active Campaign code will also attempt to change firstname and lastname.
 
 ### Requirements
